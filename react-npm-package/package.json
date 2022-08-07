@@ -1,6 +1,6 @@
 {
   "name": "get-link-preview",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Generates link preview. Provides custom hook to get link preview",
   "main": "index.js",
   "scripts": {
