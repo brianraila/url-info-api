@@ -1,9 +1,11 @@
 const { getAbsolutePath } = require("./getAbsolutePath");
 
 exports.getFavicon = (url, html) => {
-  const faviconUrl = html("link[rel='icon']").attr("href");
+  let favicon = html("link[rel='icon']").attr("href");
 
-  const favicon = getAbsolutePath(url, faviconUrl)
+  if (favicon) {
+    favicon = getAbsolutePath(url, favicon);
+  }
 
   return favicon;
 };
