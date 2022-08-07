@@ -51,9 +51,10 @@ const TestPreview = () => {
   };
 
   const resetOutput = () => {
-    setLoading(true);
+    setLoading(false);
     setError();
     setPreviewData();
+    setUrl();
   };
 
   const validateUrl = (url) => {
@@ -70,7 +71,7 @@ const TestPreview = () => {
       <h2>Try Link Preview 🔗</h2>
 
       <form onSubmit={submitHandler}>
-        <input type="url" name="url"></input>
+        <input type="url" name="url" onChange={resetOutput}></input>
         <button>Test</button>
       </form>
 
