@@ -6,7 +6,7 @@ const {
   getImage,
   getSitename,
   getType,
-  getURl,
+  getOgUrl,
   getDomain,
   getFavicon,
   validateUrl,
@@ -32,7 +32,7 @@ const getLinkPreview = async (req, res) => {
 
     const sitename = getSitename(html);
 
-    const siteurl = getURl(html);
+    const ogUrl = getOgUrl(html);
 
     const type = getType(html);
 
@@ -42,11 +42,12 @@ const getLinkPreview = async (req, res) => {
 
     return res.status(200).json({
       success: true,
+      url,
       title,
       description,
       image,
       sitename,
-      url: siteurl,
+      ogUrl,
       type,
       domain,
       favicon,

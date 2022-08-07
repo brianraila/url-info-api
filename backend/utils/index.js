@@ -6,7 +6,7 @@ const { getLinkFromText } = require("./getLinkFromText");
 const { getSitename } = require("./getSitename");
 const { getTitle } = require("./getTitle");
 const { getType } = require("./getType");
-const { getURl } = require("./getUrl");
+const { getOgUrl } = require("./getOgUrl");
 const { validateUrl } = require("./vaildateUrl");
 
 module.exports = {
@@ -18,6 +18,6 @@ module.exports = {
   getSitename,
   getTitle,
   getType,
-  getURl,
+  getOgUrl,
   validateUrl,
 };
