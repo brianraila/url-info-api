@@ -1048,10 +1048,6 @@ time {
     max-width: 90vw;
     min-width: 90vw;
   }
-
-  #main {
-    min-height: 80vh;
-  }
 }
 
 .link-preview {
