@@ -8,7 +8,7 @@ const Features = ({ scrollToTest, scrollToNpm, scrollToApi, featuresRef }) => {
       ref={featuresRef}
       style={{minHeight: "90vh"}}
     >
-      <h2 style={{ fontSize: "2rem", textAlign: "center" }}>Features ✨</h2>
+      <h2 style={{ fontSize: "2rem", textAlign: "center", marginBottom: "2rem" }}>Features ✨</h2>
       <div className="events-container">
         <div className="event">
           <img src="./broken-link.png" alt="" className="forum-icon" />
@@ -16,7 +16,7 @@ const Features = ({ scrollToTest, scrollToNpm, scrollToApi, featuresRef }) => {
           <p className="section-forum-desc">
             Enter the URL and test the link preview in this app itself.
           </p>
-          <button onClick={scrollToTest} style={{ cursor: "pointer" }}>
+          <button onClick={scrollToTest} style={{ cursor: "pointer", border: "1px solid #60A5FA" }}>
             Test URL
           </button>
         </div>
@@ -27,7 +27,7 @@ const Features = ({ scrollToTest, scrollToNpm, scrollToApi, featuresRef }) => {
             Install the NPM package and use the custom hook to get link preview
             of any link and use it in your app.
           </p>
-          <button onClick={scrollToNpm} style={{ cursor: "pointer" }}>
+          <button onClick={scrollToNpm} style={{ cursor: "pointer", border: "1px solid #60A5FA" }}>
             Test NPM
           </button>
         </div>
@@ -38,7 +38,7 @@ const Features = ({ scrollToTest, scrollToNpm, scrollToApi, featuresRef }) => {
             Use the API endpoint to get link preview of any link and use it in
             your app.
           </p>
-          <button onClick={scrollToApi} style={{ cursor: "pointer" }}>
+          <button onClick={scrollToApi} style={{ cursor: "pointer", border: "1px solid #60A5FA" }}>
             Test API
           </button>
         </div>
