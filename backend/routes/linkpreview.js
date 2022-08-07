@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { getLinkPreview } = require("../controllers/linkPreviewController");
+const { getLinkPreview } = require("../controllers/linkpreviewController");
 
 router.route("/").get(getLinkPreview);
 
