@@ -6,7 +6,7 @@ const Landing = () => {
       <header className="header">
         <div className="flex-center">
           <img className="logo" src="./broken-link.png" alt="logo"></img>
-          <div className="logo-name">link preview</div>
+          <div className="logo-name">get link preview</div>
         </div>
       </header>
 
