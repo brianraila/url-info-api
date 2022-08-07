@@ -28,7 +28,7 @@ const getLinkPreview = async (req, res) => {
 
     const description = getDescription(html);
 
-    const image = getImage(html);
+    const image = getImage(url, html);
 
     const sitename = getSitename(html);
 
