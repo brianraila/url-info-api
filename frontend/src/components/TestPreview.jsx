@@ -2,8 +2,9 @@ import React from "react";
 import { useState } from "react";
 import getLinkPreviewData from "../services/getLinkPreviewData";
 import LinkPreviewCard from "./LinkPreviewCard";
+import Loader from "./Loader";
 
-const TestPreview = ({testRef}) => {
+const TestPreview = ({ testRef }) => {
   const [previewData, setPreviewData] = useState();
   const [loading, setLoading] = useState(false);
   const [url, setUrl] = useState(false);
@@ -72,13 +73,17 @@ const TestPreview = ({testRef}) => {
       <h2>Try Link Preview 🔗</h2>
 
       <form onSubmit={submitHandler}>
-        
-        <input type="url" name="url" onChange={resetOutput} placeholder="Enter url"></input>
+        <input
+          type="url"
+          name="url"
+          onChange={resetOutput}
+          placeholder="Enter url"
+        ></input>
         <button>Test</button>
       </form>
 
       <div className="output">
-        {loading && "loading...."}
+        {loading && <Loader></Loader>}
         {error && (
           <div style={{ textAlign: "center", color: "#DC2626" }}>
             {error} : Can't load preview data.
