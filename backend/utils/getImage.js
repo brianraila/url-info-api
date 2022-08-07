@@ -1,0 +1,3 @@
+exports.getImage = () => {
+  return "image";
+};

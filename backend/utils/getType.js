@@ -1,0 +1,3 @@
+exports.getType = () => {
+  return "type";
+};

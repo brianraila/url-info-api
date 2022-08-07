@@ -1,0 +1,3 @@
+exports.getTitle = () => {
+  return "title";
+};

@@ -1,0 +1,4 @@
+exports.getLinkFromText = () => {
+    return "link";
+  };
+  
