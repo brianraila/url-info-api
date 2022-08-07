@@ -1,8 +1,8 @@
 import React from "react";
 
-const NpmPackage = () => {
+const NpmPackage = ({npmRef}) => {
   return (
-    <section className="feature feature-api">
+    <section className="feature feature-api" ref={npmRef}>
       <h2 style={{ marginTop: "4rem" }}>
         Get Link Preview <span>NPM Package 🔗</span>
       </h2>

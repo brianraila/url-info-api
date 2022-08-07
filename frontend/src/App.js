@@ -10,6 +10,8 @@ function App() {
   const landingRef = useRef(null);
   const testRef = useRef(null);
   const apiRef = useRef(null);
+  const featuresRef = useRef(null);
+  const npmRef = useRef(null);
 
   const scrollToLanding = () =>
     landingRef.current.scrollIntoView({ behavior: "smooth" });
@@ -17,22 +19,31 @@ function App() {
     testRef.current.scrollIntoView({ behavior: "smooth" });
   const scrollToApi = () =>
     apiRef.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToFeatures = () =>
+    featuresRef.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToNpm = () =>
+    npmRef.current.scrollIntoView({ behavior: "smooth" });
 
   return (
     <div className="App">
       <Landing
         landingRef={landingRef}
+        scrollToFeatures={scrollToFeatures}
+      />
+      <Features
+        featuresRef={featuresRef}
         scrollToTest={scrollToTest}
         scrollToApi={scrollToApi}
+        scrollToNpm={scrollToNpm}
       />
-      <Features/>
       <TestPreview testRef={testRef} />
       <TestAPI apiRef={apiRef}></TestAPI>
-      <NpmPackage></NpmPackage>
+      <NpmPackage npmRef={npmRef}></NpmPackage>
       <Footer
         scrollToTest={scrollToTest}
         scrollToLanding={scrollToLanding}
         scrollToApi={scrollToApi}
+        scrollToNpm={scrollToNpm}
       />
     </div>
   );

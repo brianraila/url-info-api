@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = ({scrollToTest, scrollToLanding, scrollToApi}) => {
+const Footer = ({scrollToTest, scrollToLanding, scrollToApi, scrollToNpm}) => {
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -30,6 +30,11 @@ const Footer = ({scrollToTest, scrollToLanding, scrollToApi}) => {
             <li className="footer-list-item">
               <div style={{cursor: "pointer"}} onClick={scrollToApi}>
                 API
+              </div>
+            </li>
+            <li className="footer-list-item">
+              <div style={{cursor: "pointer"}} onClick={scrollToNpm}>
+                NPM package
               </div>
             </li>
           </ul>
