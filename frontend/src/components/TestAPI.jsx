@@ -57,7 +57,7 @@ const TestAPI = ({ apiRef }) => {
           >
             Request query:
           </p>
-          <code className="api-url" style={{whiteSpace: "nowrap"}}>?text=https://github.com/siddhigate</code>
+          <code className="api-url" style={{whiteSpace: "nowrap"}}>?url=https://github.com/siddhigate</code>
         </div>
 
         <div>
