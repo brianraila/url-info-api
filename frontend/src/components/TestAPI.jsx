@@ -21,7 +21,7 @@ const TestAPI = ({ apiRef }) => {
           target="_blank"
           className="api-url"
         >
-          <code>
+          <code style={{whiteSpace: "nowrap"}}>
             https://get-link-preview.herokuapp.com/?url=https://github.com/siddhigate
           </code>
         </a>
@@ -57,7 +57,7 @@ const TestAPI = ({ apiRef }) => {
           >
             Request query:
           </p>
-          <code className="api-url">?url=https://github.com/siddhigate</code>
+          <code className="api-url" style={{whiteSpace: "nowrap"}}>?url=https://github.com/siddhigate</code>
         </div>
 
         <div>

@@ -1236,3 +1236,7 @@ time {
   max-width: 650px;
   margin: auto;
 }
+
+.api-url p{
+  white-space: nowrap;
+}
