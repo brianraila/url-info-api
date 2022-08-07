@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Footer from "./components/Footer";
 import Landing from "./components/Landing";
+import TestAPI from "./components/TestAPI";
 import TestPreview from "./components/TestPreview";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Landing landingRef={landingRef} scrollToTest={scrollToTest} />
       <TestPreview testRef={testRef} />
+      <TestAPI></TestAPI>
       <Footer scrollToTest={scrollToTest} scrollToLanding={scrollToLanding} />
     </div>
   );
