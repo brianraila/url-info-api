@@ -1013,6 +1013,7 @@ time {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .feature {
@@ -1049,7 +1050,7 @@ time {
   }
 
   #main {
-    min-height: 70vh;
+    min-height: 80vh;
   }
 }
 
