@@ -71,8 +71,8 @@ const TestPreview = ({ testRef }) => {
   };
 
   return (
-    <section className="feature" ref={testRef}>
-      <h2>Try Link Preview 🔗</h2>
+    <section className="feature" ref={testRef} style={{backgroundColor: "#F9FAFB"}}>
+      <h2 style={{paddingTop: "2rem"}}>Try Link Preview 🔗</h2>
 
       <form onSubmit={submitHandler}>
         <input

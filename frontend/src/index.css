@@ -1010,7 +1010,7 @@ time {
 }
 
 .feature {
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .feature h2 {
@@ -1055,6 +1055,8 @@ time {
 }
 
 .link-preview {
+  min-width: 100px;
+  width: 300px;
   max-width: 350px;
   margin: auto;
   display: block;
