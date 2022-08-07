@@ -1240,3 +1240,7 @@ time {
 .api-url p{
   white-space: nowrap;
 }
+
+.feature-api {
+  align-items: stretch;
+}
