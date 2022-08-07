@@ -1054,7 +1054,7 @@ time {
 }
 
 .link-preview {
-  max-width: 500px;
+  max-width: 350px;
   margin: auto;
   display: block;
   color: inherit;
@@ -1070,10 +1070,16 @@ time {
 
 .only-link {
   display: block;
-  border-top: 1px solid #d1d5db;
+  margin:2rem;
+  border: 1px solid #d1d5db;
   color: inherit;
   text-decoration: none;
   padding: 1rem;
+}
+
+.link-preview img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .link-preview .title {

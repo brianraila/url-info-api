@@ -10,6 +10,7 @@ const TestPreview = () => {
   const [error, setError] = useState();
 
   const fetchLinkPreviewData = async (urlInput) => {
+    setLoading(true);
     try {
       const res = await getLinkPreviewData(urlInput);
       console.log(res.data);
@@ -20,7 +21,7 @@ const TestPreview = () => {
       } else {
         setError("Something went wrong!");
       }
-      setPreviewData(null);
+      setPreviewData({ url });
     } finally {
       setLoading(false);
     }
@@ -77,7 +78,11 @@ const TestPreview = () => {
 
       <div className="output">
         {loading && "loading...."}
-        {error && <div>{error}</div>}
+        {error && (
+          <div style={{ textAlign: "center", color: "#DC2626" }}>
+            {error} : Can't load preview data.
+          </div>
+        )}
         {previewData && (
           <LinkPreviewCard
             data={previewData}
