@@ -6,7 +6,7 @@ const Footer = ({scrollToTest, scrollToLanding}) => {
       <div className="footer-container">
         <div className="footer-about">
           <div className="footer-subheading">About</div>
-          <span style={{ fontStyle: "italic" }}>Hey, there 👋 </span> Link
+          <span style={{ fontStyle: "italic" }}>Hey, there 👋 </span> Get Link
           preview is a tool which will generate the link's preview data. You can
           try the feature directly or use an API to integrate it in your app.
           You just need to pass the API and the link preview tool will take care
@@ -75,7 +75,7 @@ const Footer = ({scrollToTest, scrollToLanding}) => {
       <div className="footer-signoff">
         <div className="footer-text">
           Copyright © 2021 All Rights Reserved by
-          <span style={{ fontStyle: "italic" }}> link preview.</span>
+          <span style={{ fontStyle: "italic" }}> get link preview.</span>
         </div>
       </div>
     </footer>
