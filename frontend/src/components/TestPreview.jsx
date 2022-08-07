@@ -1,16 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import getLinkPreviewData from "../services/getLinkPreviewData";
+import LinkPreviewCard from "./LinkPreviewCard";
 
 const TestPreview = () => {
   const [previewData, setPreviewData] = useState();
   const [loading, setLoading] = useState(false);
+  const [url, setUrl] = useState(false);
   const [error, setError] = useState();
 
-  const fetchLinkPreviewData = async (url) => {
+  const fetchLinkPreviewData = async (urlInput) => {
     try {
-      const res = await getLinkPreviewData(url);
-      console.log(res.data)
+      const res = await getLinkPreviewData(urlInput);
+      console.log(res.data);
       setPreviewData(res.data);
     } catch (err) {
       if (err.response?.data?.message) {
@@ -29,21 +31,23 @@ const TestPreview = () => {
 
     resetOutput();
 
-    const url = e.target[0].value;
+    const urlInput = e.target[0].value;
 
-    if(!url) {
+    if (!urlInput) {
       setError("Please enter url");
-      setLoading(false)
+      setLoading(false);
       return;
     }
 
-    if(!validateUrl(url)) {
+    if (!validateUrl(urlInput)) {
       setError("Please enter a valid url");
-      setLoading(false)
+      setLoading(false);
       return;
     }
 
-    fetchLinkPreviewData(url);
+    setUrl(urlInput);
+
+    fetchLinkPreviewData(urlInput);
   };
 
   const resetOutput = () => {
@@ -53,14 +57,13 @@ const TestPreview = () => {
   };
 
   const validateUrl = (url) => {
-
     try {
       new URL(url);
       return true;
     } catch {
       return false;
     }
-  }
+  };
 
   return (
     <section className="feature">
@@ -74,7 +77,13 @@ const TestPreview = () => {
       <div className="output">
         {loading && "loading...."}
         {error && <div>{error}</div>}
-        {previewData && "PreviewData"}
+        {previewData && (
+          <LinkPreviewCard
+            data={previewData}
+            error={error}
+            url={url}
+          ></LinkPreviewCard>
+        )}
       </div>
     </section>
   );
