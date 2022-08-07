@@ -38,7 +38,7 @@ const getLinkPreview = async (req, res) => {
 
     const domain = getDomain(url);
 
-    const favicon = getFavicon(html);
+    const favicon = getFavicon(url, html);
 
     return res.status(200).json({
       success: true,
