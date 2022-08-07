@@ -157,8 +157,9 @@ select {
 }
 
 .main-wrapper .know-more-btn {
-  border: 1px solid #68e1fd;
-  background-color: #60A5FA;
+  border: 1px solid #338cfb;
+  background-color: #338cfb;
+  color: white;
   padding: 0.75rem 4rem;
   font-size: 1.15rem;
   margin-top: 2rem;
@@ -1041,8 +1042,9 @@ time {
 
 .feature button {
   padding: 0.5rem 0.85rem;
-  background-color: #60A5FA;
-  border: 1px solid #60A5FA;
+  background-color: #338cfb;
+  border: 1px solid #338cfb;
+  color: white;
   border-radius: 3px;
   flex-grow: 1;
 }
@@ -1277,7 +1279,7 @@ time {
 
 .event button {
   display: block;
-  background: #60A5FA;
+  background: #4192f5;
   padding: 0.75rem 4rem;
   flex-grow: initial;
   height: fit-content;
