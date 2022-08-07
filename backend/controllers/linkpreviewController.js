@@ -13,10 +13,12 @@ const {
 } = require("../utils");
 
 const getLinkPreview = async (req, res) => {
-  let { url } = req.body;
+  let { text } = req.body;
 
+  let url = text;
+  
   if (!url) {
-    url = req.query.url;
+    url = req.query.text;
   }
 
   if(!url) {
