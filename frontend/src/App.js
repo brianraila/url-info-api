@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Landing from "./components/Landing";
 import NpmPackage from "./components/NpmPackage";
@@ -24,6 +25,7 @@ function App() {
         scrollToTest={scrollToTest}
         scrollToApi={scrollToApi}
       />
+      <Features/>
       <TestPreview testRef={testRef} />
       <TestAPI apiRef={apiRef}></TestAPI>
       <NpmPackage></NpmPackage>

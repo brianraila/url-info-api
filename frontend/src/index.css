@@ -1237,10 +1237,88 @@ time {
   margin: auto;
 }
 
-.api-url p{
+.api-url p {
   white-space: nowrap;
 }
 
 .feature-api {
   align-items: stretch;
+}
+
+/**
+ * Events section
+**/
+.section~.section-events {
+  justify-content: flex-start;
+}
+
+.section-events .events-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-top: 5px solid #60A5FA;
+  margin: 1rem;
+  padding: 2rem;
+  min-height: 60vh;
+  background-color: white;
+}
+
+.event button {
+  display: block;
+  background: #60A5FA;
+  padding: 0.75rem 4rem;
+  flex-grow: initial;
+  height: fit-content;
+  border-radius: 3px;
+  color: white;
+  font-size: 1rem;
+}
+
+.section-events .see-all-events {
+  text-align: center;
+  color: var(--blue-600);
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.section-events .see-all-events:hover {
+  font-weight: 500;
+  color: var(--blue-600);
+}
+
+.event img {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
+
+.event h3 {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-events .events-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event {
+    margin: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-events .events-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
