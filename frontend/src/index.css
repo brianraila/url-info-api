@@ -901,6 +901,14 @@ time {
   gap: 1rem;
 }
 
+@media screen and (max-width: 955px) {
+
+  .ctas {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
 @media screen and (max-width: 900px) {
 
   .ctas {
@@ -995,4 +1003,49 @@ time {
 
   padding: 1rem;
   border-bottom: 1px solid #d1d5db;
+}
+
+.feature {
+  min-height: 100vh;
+}
+
+.feature h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature form {
+  max-width: 650px;
+  min-width: 600px;
+}
+
+.feature input {
+  margin: 2rem 1rem;
+  padding: 0.5rem 0.85rem;
+  width: 70%;
+}
+
+.feature button {
+  padding: 0.5rem 0.85rem;
+  background-color: #60A5FA;
+  border: 1px solid #60A5FA;  
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 600px) { 
+  .feature form {
+    max-width: 90vw;
+    min-width: 90vw;
+  }
+
+  #main {
+    min-height: 70vh;
+  }
 }
