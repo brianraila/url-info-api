@@ -1269,8 +1269,9 @@ time {
   border: 1px solid lightgray;
   border-top: 5px solid #60A5FA;
   margin: 1rem;
-  padding: 2rem;
-  min-height: 60vh;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  font-family: var(--ff-secondary);
   background-color: white;
 }
 
