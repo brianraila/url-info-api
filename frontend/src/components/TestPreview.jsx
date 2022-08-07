@@ -3,7 +3,7 @@ import { useState } from "react";
 import getLinkPreviewData from "../services/getLinkPreviewData";
 import LinkPreviewCard from "./LinkPreviewCard";
 
-const TestPreview = () => {
+const TestPreview = ({testRef}) => {
   const [previewData, setPreviewData] = useState();
   const [loading, setLoading] = useState(false);
   const [url, setUrl] = useState(false);
@@ -68,7 +68,7 @@ const TestPreview = () => {
   };
 
   return (
-    <section className="feature">
+    <section className="feature" ref={testRef}>
       <h2>Try Link Preview 🔗</h2>
 
       <form onSubmit={submitHandler}>

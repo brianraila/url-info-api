@@ -1,9 +1,9 @@
 import React from "react";
 
-const Landing = () => {
+const Landing = ({scrollToTest, landingRef}) => {
   return (
     <>
-      <header className="header">
+      <header className="header" ref={landingRef}>
         <div className="flex-center">
           <img className="logo" src="./broken-link.png" alt="logo"></img>
           <div className="logo-name">get link preview</div>
@@ -24,7 +24,7 @@ const Landing = () => {
               preview in your app.
             </p>
             <div className="ctas">
-              <button className="know-more-btn">Try it out</button>
+              <button className="know-more-btn" onClick={scrollToTest}>Try it out</button>
               <button className="know-more-btn know-more-btn-secondary">
                 Try the API
               </button>

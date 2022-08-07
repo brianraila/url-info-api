@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({scrollToTest, scrollToLanding}) => {
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -18,19 +18,19 @@ const Footer = () => {
 
           <ul className="list-style-none">
             <li className="footer-list-item">
-              <a href="./landing.html" className="link">
+              <div onClick={scrollToLanding} style={{cursor: "pointer"}}>
                 Home
-              </a>
+              </div>
             </li>
             <li className="footer-list-item">
-              <a href="#brands" className="link">
+              <div onClick={scrollToTest} style={{cursor: "pointer"}}>
                 Test
-              </a>
+              </div>
             </li>
             <li className="footer-list-item">
-              <a href="#brands" className="link">
+              <div style={{cursor: "pointer"}}>
                 API
-              </a>
+              </div>
             </li>
           </ul>
         </div>

@@ -1,13 +1,22 @@
+import { useRef } from "react";
 import Footer from "./components/Footer";
 import Landing from "./components/Landing";
 import TestPreview from "./components/TestPreview";
 
 function App() {
+  const landingRef = useRef(null);
+  const testRef = useRef(null);
+
+  const scrollToLanding = () =>
+    landingRef.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToTest = () =>
+    testRef.current.scrollIntoView({ behavior: "smooth" });
+
   return (
     <div className="App">
-      <Landing/>
-      <TestPreview/>
-      <Footer/>
+      <Landing landingRef={landingRef} scrollToTest={scrollToTest} />
+      <TestPreview testRef={testRef} />
+      <Footer scrollToTest={scrollToTest} scrollToLanding={scrollToLanding} />
     </div>
   );
 }
