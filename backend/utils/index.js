@@ -7,6 +7,7 @@ const { getSitename } = require("./getSitename");
 const { getTitle } = require("./getTitle");
 const { getType } = require("./getType");
 const { getURl } = require("./getUrl");
+const { validateUrl } = require("./vaildateUrl");
 
 module.exports = {
   getDomain,
@@ -18,4 +19,5 @@ module.exports = {
   getTitle,
   getType,
   getURl,
+  validateUrl,
 };
