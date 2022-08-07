@@ -783,7 +783,7 @@ time {
 **/
 .footer {
   min-height: 70vh;
-  background: #fef2f2;
+  background: #f4f8fe;
   color: #575e6a;
   display: flex;
   justify-content: space-between;

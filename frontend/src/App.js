@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Landing from "./components/Landing";
 import TestPreview from "./components/TestPreview";
 
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Landing/>
       <TestPreview/>
+      <Footer/>
     </div>
   );
 }
