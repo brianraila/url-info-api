@@ -79,6 +79,7 @@ const TestPreview = ({ testRef }) => {
           type="url"
           name="url"
           onChange={resetOutput}
+          onClick={() => setShowImage(false)}
           placeholder="Enter url"
         ></input>
         <button>Test</button>
