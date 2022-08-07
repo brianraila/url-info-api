@@ -1224,6 +1224,7 @@ time {
   border: 1px solid #f6eed9;
   display: block;
   color: inherit;
+  max-width: 90vw;
   overflow-x: auto;
   text-decoration: none;
   margin: 1rem;
