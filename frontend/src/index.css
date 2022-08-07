@@ -852,6 +852,10 @@ time {
   display: inline;
 }
 
+.footer-about {
+  margin: 1rem;
+}
+
 @media screen and (max-width: 900px) {
   .footer {
     margin-top: 3rem;
@@ -1067,7 +1071,7 @@ time {
 
 .only-link {
   display: block;
-  margin:2rem;
+  margin: 2rem;
   border: 1px solid #d1d5db;
   color: inherit;
   text-decoration: none;
