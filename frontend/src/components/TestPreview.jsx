@@ -72,7 +72,8 @@ const TestPreview = () => {
       <h2>Try Link Preview 🔗</h2>
 
       <form onSubmit={submitHandler}>
-        <input type="url" name="url" onChange={resetOutput}></input>
+        
+        <input type="url" name="url" onChange={resetOutput} placeholder="Enter url"></input>
         <button>Test</button>
       </form>
 
