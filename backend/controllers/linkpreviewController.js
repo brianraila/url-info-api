@@ -13,7 +13,11 @@ const {
 } = require("../utils");
 
 const getLinkPreview = async (req, res) => {
-  const { url } = req.body;
+  let { url } = req.body;
+
+  if (!url) {
+    url = req.query.url;
+  }
 
   if (!validateUrl(url)) {
     return res.status(400).json({ success: false, message: "Invalid URL" });
@@ -42,7 +46,6 @@ const getLinkPreview = async (req, res) => {
 
     return res.status(200).json({
       success: true,
-      url,
       title,
       description,
       image,
@@ -53,8 +56,7 @@ const getLinkPreview = async (req, res) => {
       favicon,
     });
   } catch (err) {
-
-    console.log(err)
+    console.log(err);
     const status = err.response?.status || 400;
     const statusText = err.response?.statusText || "Something went wrong";
 
