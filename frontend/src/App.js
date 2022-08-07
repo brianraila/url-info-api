@@ -7,18 +7,29 @@ import TestPreview from "./components/TestPreview";
 function App() {
   const landingRef = useRef(null);
   const testRef = useRef(null);
+  const apiRef = useRef(null);
 
   const scrollToLanding = () =>
     landingRef.current.scrollIntoView({ behavior: "smooth" });
   const scrollToTest = () =>
     testRef.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToApi = () =>
+    apiRef.current.scrollIntoView({ behavior: "smooth" });
 
   return (
     <div className="App">
-      <Landing landingRef={landingRef} scrollToTest={scrollToTest} />
+      <Landing
+        landingRef={landingRef}
+        scrollToTest={scrollToTest}
+        scrollToApi={scrollToApi}
+      />
       <TestPreview testRef={testRef} />
-      <TestAPI></TestAPI>
-      <Footer scrollToTest={scrollToTest} scrollToLanding={scrollToLanding} />
+      <TestAPI apiRef={apiRef}></TestAPI>
+      <Footer
+        scrollToTest={scrollToTest}
+        scrollToLanding={scrollToLanding}
+        scrollToApi={scrollToApi}
+      />
     </div>
   );
 }

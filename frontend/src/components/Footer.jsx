@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = ({scrollToTest, scrollToLanding}) => {
+const Footer = ({scrollToTest, scrollToLanding, scrollToApi}) => {
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -28,7 +28,7 @@ const Footer = ({scrollToTest, scrollToLanding}) => {
               </div>
             </li>
             <li className="footer-list-item">
-              <div style={{cursor: "pointer"}}>
+              <div style={{cursor: "pointer"}} onClick={scrollToApi}>
                 API
               </div>
             </li>

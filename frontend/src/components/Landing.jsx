@@ -1,6 +1,6 @@
 import React from "react";
 
-const Landing = ({scrollToTest, landingRef}) => {
+const Landing = ({ scrollToTest, landingRef, scrollToApi }) => {
   return (
     <>
       <header className="header" ref={landingRef}>
@@ -24,8 +24,13 @@ const Landing = ({scrollToTest, landingRef}) => {
               preview in your app.
             </p>
             <div className="ctas">
-              <button className="know-more-btn" onClick={scrollToTest}>Try it out</button>
-              <button className="know-more-btn know-more-btn-secondary">
+              <button className="know-more-btn" onClick={scrollToTest}>
+                Try it out
+              </button>
+              <button
+                className="know-more-btn know-more-btn-secondary"
+                onClick={scrollToApi}
+              >
                 Try the API
               </button>
             </div>

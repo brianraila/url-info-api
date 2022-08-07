@@ -1,8 +1,8 @@
 import React from "react";
 
-const TestAPI = ({ testRef }) => {
+const TestAPI = ({ apiRef }) => {
   return (
-    <section className="feature feature-api" ref={testRef}>
+    <section className="feature feature-api" ref={apiRef}>
       <h2>Link Preview API 🔗</h2>
 
       <div>
