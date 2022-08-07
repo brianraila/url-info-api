@@ -16,9 +16,9 @@ const getLinkPreview = async (req, res) => {
   let { text } = req.body;
 
   let url = text;
-  
+
   if (!url) {
-    url = req.query.text;
+    url = req.query?.text;
   }
 
   if(!url) {
