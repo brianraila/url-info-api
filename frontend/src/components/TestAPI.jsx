@@ -19,6 +19,7 @@ const TestAPI = ({ apiRef }) => {
         <a
           href="https://get-link-preview.herokuapp.com/?url=https://github.com/siddhigate"
           target="_blank"
+          rel="noreferrer"
           className="api-url"
         >
           <code style={{whiteSpace: "nowrap"}}>
