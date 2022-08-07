@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import getLinkPreviewData from "../services/getLinkPreviewData";
+import EnterUrl from "./EnterUrl";
 import LinkPreviewCard from "./LinkPreviewCard";
 import Loader from "./Loader";
 
@@ -9,6 +10,7 @@ const TestPreview = ({ testRef }) => {
   const [loading, setLoading] = useState(false);
   const [url, setUrl] = useState(false);
   const [error, setError] = useState();
+  const [showImage, setShowImage] = useState(true);
 
   const fetchLinkPreviewData = async (urlInput) => {
     setLoading(true);
@@ -30,7 +32,7 @@ const TestPreview = ({ testRef }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-
+    setPreviewData();
     resetOutput();
 
     const urlInput = e.target[0].value;
@@ -55,8 +57,8 @@ const TestPreview = ({ testRef }) => {
   const resetOutput = () => {
     setLoading(false);
     setError();
-    setPreviewData();
     setUrl();
+    setShowImage(false);
   };
 
   const validateUrl = (url) => {
@@ -84,6 +86,7 @@ const TestPreview = ({ testRef }) => {
 
       <div className="output">
         {loading && <Loader></Loader>}
+        {showImage && <EnterUrl></EnterUrl>}
         {error && (
           <div style={{ textAlign: "center", color: "#DC2626" }}>
             {error} : Can't load preview data.
