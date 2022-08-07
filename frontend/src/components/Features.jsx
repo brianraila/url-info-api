@@ -16,7 +16,7 @@ const Features = ({ scrollToTest, scrollToNpm, scrollToApi, featuresRef }) => {
             Enter the URL and test the link preview in this app itself.
           </p>
           <button onClick={scrollToTest} style={{ cursor: "pointer" }}>
-            Test
+            Test URL
           </button>
         </div>
         <div className="event">
