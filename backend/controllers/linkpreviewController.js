@@ -19,6 +19,10 @@ const getLinkPreview = async (req, res) => {
     url = req.query.url;
   }
 
+  if(!url) {
+    return res.status(400).json({ success: false, message: "Please provide URL" });
+  }
+
   if (!validateUrl(url)) {
     return res.status(400).json({ success: false, message: "Invalid URL" });
   }
