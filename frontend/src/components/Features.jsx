@@ -4,10 +4,11 @@ const Features = ({ scrollToTest, scrollToNpm, scrollToApi, featuresRef }) => {
   return (
     <section
       id="events"
-      className="feature section section-events"
+      className="section section-events"
       ref={featuresRef}
+      style={{minHeight: "90vh"}}
     >
-      <h2 style={{ fontSize: "2rem" }}>Features</h2>
+      <h2 style={{ fontSize: "2rem", textAlign: "center" }}>Features ✨</h2>
       <div className="events-container">
         <div className="event">
           <img src="./broken-link.png" alt="" className="forum-icon" />
