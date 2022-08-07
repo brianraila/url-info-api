@@ -3,7 +3,7 @@ import React from "react";
 const NpmPackage = () => {
   return (
     <section className="feature feature-api">
-      <h2 style={{ marginTop: "2rem" }}>
+      <h2 style={{ marginTop: "4rem" }}>
         Get Link Preview <span>NPM Package 🔗</span>
       </h2>
 
