@@ -19,7 +19,7 @@ Github repo can be found [here](https://github.com/siddhigate/link-preview)
 ## API 
 ### API endpoint
 ``` 
-https://url-info.herokuapp.com/?url=https://github.com/siddhigate
+https://url-info.vercel.app/?url=https://github.com/siddhigate
 ```
 ### API response
 ```
