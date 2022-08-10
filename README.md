@@ -1,11 +1,12 @@
+
+This is a fork of the get-link-preview repo by
+
 # get-link-preview 🔗
 View the link preview using our App. Use the API to generate link preview in your app or use the NPM package to use the custom hook in your React app.
 
 
 ## Features ✨
-- Use our app to view the link preview of any link
 - Use our API endpoint to integrate link preview in your app
-- Use the custom hook provided by our npm package to integrate link preview in your React app
 
 ## Useful links 🔗
 - [Link Preview App](https://get-link-preview.vercel.app/)
